@@ -1,0 +1,3541 @@
+{
+  "script": "independent_w3creport_full.py",
+  "description": "Independent semantic adjudication of vectors-w3c-report corpus",
+  "corpus_dir": "/tmp/a176/agent_evidence_vectors/corpora/vectors-w3c-report",
+  "summary": {
+    "total": 235,
+    "agree": 235,
+    "disagree": 0,
+    "error": 0,
+    "elapsed_seconds": 0.02
+  },
+  "results": [
+    {
+      "id": "v0090b52048ca1f51",
+      "family": "w3c-f-10",
+      "subject_type": "report",
+      "file": "vectors/v0090b52048ca1f51.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v0120d95db38b892b",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v0120d95db38b892b.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-010"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-010"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v04934d23180f6d9c",
+      "family": "w3c-f-14",
+      "subject_type": "report",
+      "file": "vectors/v04934d23180f6d9c.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v04b7811e691bd2c9",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v04b7811e691bd2c9.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v050e5667630b8bf7",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v050e5667630b8bf7.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v068436e239f3711a",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v068436e239f3711a.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v086f61b528d28efd",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v086f61b528d28efd.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v0e286b53de78162a",
+      "family": "w3c-f-8",
+      "subject_type": "report",
+      "file": "vectors/v0e286b53de78162a.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-008"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-008"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v0f620037c42bbfc3",
+      "family": "w3c-f-22",
+      "subject_type": "report",
+      "file": "vectors/v0f620037c42bbfc3.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v0f648c5f3080e1b1",
+      "family": "arm-f-steps",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v0f648c5f3080e1b1.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v1032eb59a7cdb30f",
+      "family": "w3c-f-15",
+      "subject_type": "report",
+      "file": "vectors/v1032eb59a7cdb30f.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v10aaaebb49b0bcd3",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v10aaaebb49b0bcd3.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v1158315f2ce233a8",
+      "family": "w3c-f-22",
+      "subject_type": "report",
+      "file": "vectors/v1158315f2ce233a8.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-022"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-022"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v12f1e7e27b3f59c5",
+      "family": "lcd-f-consumer",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/v12f1e7e27b3f59c5.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "LCD-R-006"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "LCD-R-006"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v148fc59046a8548a",
+      "family": "w3c-f-15",
+      "subject_type": "report",
+      "file": "vectors/v148fc59046a8548a.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v1660acd2e4efb7c7",
+      "family": "w3c-f-13",
+      "subject_type": "report",
+      "file": "vectors/v1660acd2e4efb7c7.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-013"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-013"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v183b37dea5ad4159",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v183b37dea5ad4159.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v1910c8190bcd1b5c",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/v1910c8190bcd1b5c.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v191fc069115f8706",
+      "family": "lcd-f-consumer",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/v191fc069115f8706.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v1a0f984d88bb9fe2",
+      "family": "w3c-f-8",
+      "subject_type": "report",
+      "file": "vectors/v1a0f984d88bb9fe2.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v1a5c0a7b37f5d2c4",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v1a5c0a7b37f5d2c4.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v1bb2e51524055d00",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v1bb2e51524055d00.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v1bc07a427d07bb7f",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v1bc07a427d07bb7f.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v1c020dd1ed49874c",
+      "family": "w3c-f-17",
+      "subject_type": "report",
+      "file": "vectors/v1c020dd1ed49874c.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-017"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-017"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v20a798b25fc2ec0b",
+      "family": "w3c-f-27",
+      "subject_type": "report",
+      "file": "vectors/v20a798b25fc2ec0b.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-027"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-027"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v20f99b9d22c842a3",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v20f99b9d22c842a3.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v21fe5a5de5f50124",
+      "family": "arm-f-serialization",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v21fe5a5de5f50124.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v22f803622ac75918",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v22f803622ac75918.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v239dc2ee7b28a2bb",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v239dc2ee7b28a2bb.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v254933bf314c82fc",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v254933bf314c82fc.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v25ba541b9d311416",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v25ba541b9d311416.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v2652b0b04c946504",
+      "family": "arm-f-serialization",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v2652b0b04c946504.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-020"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-020"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v265c2e6f0a3d31f6",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v265c2e6f0a3d31f6.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v27a01b14321f6ae5",
+      "family": "w3c-f-19",
+      "subject_type": "report",
+      "file": "vectors/v27a01b14321f6ae5.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-019"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-019"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v28820b464a335617",
+      "family": "w3c-f-15",
+      "subject_type": "report",
+      "file": "vectors/v28820b464a335617.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-015"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-015"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v28824a66a84f4b8c",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v28824a66a84f4b8c.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-013"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-013"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v2a251ae413920da5",
+      "family": "w3c-f-19",
+      "subject_type": "report",
+      "file": "vectors/v2a251ae413920da5.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v2a90adc95b2fbdaf",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v2a90adc95b2fbdaf.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v2b052236457b678c",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v2b052236457b678c.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v2ddb14c9194e0341",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v2ddb14c9194e0341.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v320406e03fff4faa",
+      "family": "w3c-f-5",
+      "subject_type": "report",
+      "file": "vectors/v320406e03fff4faa.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v32c1e0be1a7bf104",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v32c1e0be1a7bf104.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v32c6afab9eb5888a",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v32c6afab9eb5888a.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v36999d5568e9aacf",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v36999d5568e9aacf.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v37729703d471ba9b",
+      "family": "w3c-f-23",
+      "subject_type": "report",
+      "file": "vectors/v37729703d471ba9b.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-023"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-023"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v388dee224f53c2c1",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/v388dee224f53c2c1.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "LCD-R-005"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "LCD-R-005"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v3a14f94887e53e0d",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v3a14f94887e53e0d.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v3add8861d36c2543",
+      "family": "arm-f-steps",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v3add8861d36c2543.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-008"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-008"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v3aef8ba9ac745dbf",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v3aef8ba9ac745dbf.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v3d5079f23e498451",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v3d5079f23e498451.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v3fef7c8cc4ed5e4b",
+      "family": "w3c-f-25",
+      "subject_type": "report",
+      "file": "vectors/v3fef7c8cc4ed5e4b.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-025"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-025"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v42d2d180b1c0b5b3",
+      "family": "w3c-f-22",
+      "subject_type": "report",
+      "file": "vectors/v42d2d180b1c0b5b3.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v44f7a4acc7f66fa4",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v44f7a4acc7f66fa4.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v472759709d82c585",
+      "family": "w3c-f-20",
+      "subject_type": "report",
+      "file": "vectors/v472759709d82c585.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v48877f27bbd03b55",
+      "family": "w3c-f-18",
+      "subject_type": "report",
+      "file": "vectors/v48877f27bbd03b55.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-018"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-018"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v48d22035dc3a5f54",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v48d22035dc3a5f54.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v494ac13464d685ee",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v494ac13464d685ee.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v499412698a1dd50e",
+      "family": "w3c-f-20",
+      "subject_type": "report",
+      "file": "vectors/v499412698a1dd50e.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-020"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-020"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v49afe44cc51bc376",
+      "family": "w3c-f-29",
+      "subject_type": "report",
+      "file": "vectors/v49afe44cc51bc376.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v4a06b866afca0d49",
+      "family": "w3c-f-15",
+      "subject_type": "report",
+      "file": "vectors/v4a06b866afca0d49.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-015"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-015"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v4c778d3ee20deb35",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v4c778d3ee20deb35.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v4e4face5dd4ff492",
+      "family": "w3c-f-13",
+      "subject_type": "report",
+      "file": "vectors/v4e4face5dd4ff492.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-013"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-013"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v4f343e8bd3d6af08",
+      "family": "w3c-f-20",
+      "subject_type": "report",
+      "file": "vectors/v4f343e8bd3d6af08.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v518aa8d55ab5460b",
+      "family": "w3c-f-16",
+      "subject_type": "report",
+      "file": "vectors/v518aa8d55ab5460b.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v5390d3d7133f3963",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v5390d3d7133f3963.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v54dea8bab0674755",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v54dea8bab0674755.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v568e8a1311ecb396",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v568e8a1311ecb396.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v56b6337b612b1ee3",
+      "family": "w3c-f-12",
+      "subject_type": "report",
+      "file": "vectors/v56b6337b612b1ee3.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v56f37afaff2a6ca8",
+      "family": "w3c-f-25",
+      "subject_type": "report",
+      "file": "vectors/v56f37afaff2a6ca8.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v5a2ff35648828621",
+      "family": "w3c-f-9",
+      "subject_type": "report",
+      "file": "vectors/v5a2ff35648828621.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-009"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-009"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v5a678e8560a4f0f1",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v5a678e8560a4f0f1.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v5c26b11179a2277a",
+      "family": "w3c-f-23",
+      "subject_type": "report",
+      "file": "vectors/v5c26b11179a2277a.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-023"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-023"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v668c618f2a50e26e",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v668c618f2a50e26e.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v66fd68ad7d106fac",
+      "family": "w3c-f-14",
+      "subject_type": "report",
+      "file": "vectors/v66fd68ad7d106fac.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-014"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-014"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v67727ceb5f2f7932",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v67727ceb5f2f7932.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v67e996a3fa03e959",
+      "family": "w3c-f-22",
+      "subject_type": "report",
+      "file": "vectors/v67e996a3fa03e959.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-022"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-022"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v696c5dd5918c854b",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v696c5dd5918c854b.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-002"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-002"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v6b1ea60273861c5a",
+      "family": "w3c-f-23",
+      "subject_type": "report",
+      "file": "vectors/v6b1ea60273861c5a.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-023"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-023"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v6cd84ff1aea45153",
+      "family": "w3c-f-20",
+      "subject_type": "report",
+      "file": "vectors/v6cd84ff1aea45153.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-020"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-020"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v6cfd1d72b49d8853",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v6cfd1d72b49d8853.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v70533f1029ed78e6",
+      "family": "lcd-f-consumer",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/v70533f1029ed78e6.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "LCD-R-009"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "LCD-R-009"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v7257ad4efb1d0638",
+      "family": "arm-f-serialization",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v7257ad4efb1d0638.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v7351d22d2343dfb5",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v7351d22d2343dfb5.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v735efb00ce85d044",
+      "family": "w3c-f-17",
+      "subject_type": "report",
+      "file": "vectors/v735efb00ce85d044.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v737955ac1c0d9c2e",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v737955ac1c0d9c2e.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v76c0022fb2a7f21e",
+      "family": "w3c-f-25",
+      "subject_type": "report",
+      "file": "vectors/v76c0022fb2a7f21e.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v77f27a301818a512",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v77f27a301818a512.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v79266aba771310af",
+      "family": "lcd-f-consumer",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/v79266aba771310af.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "LCD-R-011"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "LCD-R-011"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v796a6048345b8f58",
+      "family": "w3c-f-29",
+      "subject_type": "report",
+      "file": "vectors/v796a6048345b8f58.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v7aca350e00458527",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v7aca350e00458527.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v7bc7c1460093e973",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/v7bc7c1460093e973.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "LCD-R-003"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "LCD-R-003"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v7c22f1451e51aeb5",
+      "family": "w3c-f-15",
+      "subject_type": "report",
+      "file": "vectors/v7c22f1451e51aeb5.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-015"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-015"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v7cac3bda7403c268",
+      "family": "w3c-f-5",
+      "subject_type": "report",
+      "file": "vectors/v7cac3bda7403c268.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-005"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-005"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v7ead0086cb766b10",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v7ead0086cb766b10.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v7ec5cc451c0c1564",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v7ec5cc451c0c1564.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v804ca6858fa22efe",
+      "family": "w3c-f-2",
+      "subject_type": "report",
+      "file": "vectors/v804ca6858fa22efe.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v81c7f6fc68ea35a7",
+      "family": "arm-f-serialization",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v81c7f6fc68ea35a7.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v8224d0f41c80f492",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v8224d0f41c80f492.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v822b02c01fe9ddd2",
+      "family": "w3c-f-3",
+      "subject_type": "report",
+      "file": "vectors/v822b02c01fe9ddd2.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v827901388ec40c23",
+      "family": "arm-f-totals",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v827901388ec40c23.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v828ec4d8309aa2e3",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v828ec4d8309aa2e3.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v838fe3be3393696c",
+      "family": "arm-f-steps",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v838fe3be3393696c.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v84f8c68bc5fc2810",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v84f8c68bc5fc2810.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v85c0428fc7fdabc7",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/v85c0428fc7fdabc7.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v85db98532abea6d9",
+      "family": "lcd-f-consumer",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/v85db98532abea6d9.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "LCD-R-007"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "LCD-R-007"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v86e1560a0d27b432",
+      "family": "w3c-f-15",
+      "subject_type": "report",
+      "file": "vectors/v86e1560a0d27b432.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v88935f0b29397a80",
+      "family": "w3c-f-15",
+      "subject_type": "report",
+      "file": "vectors/v88935f0b29397a80.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-015"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-015"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v8981e0830c69b869",
+      "family": "w3c-f-6",
+      "subject_type": "report",
+      "file": "vectors/v8981e0830c69b869.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-006"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-006"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v8a7442b19984a1ff",
+      "family": "w3c-f-7",
+      "subject_type": "report",
+      "file": "vectors/v8a7442b19984a1ff.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v8b06a7e78dc8d039",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v8b06a7e78dc8d039.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v8c15455bb3d933cb",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v8c15455bb3d933cb.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v8d4e61737e9ee6a6",
+      "family": "arm-f-serialization",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v8d4e61737e9ee6a6.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-019"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-019"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v96087777a4afe26f",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/v96087777a4afe26f.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v9815e1f08a7e0664",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v9815e1f08a7e0664.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-003"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-003"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v98252c989e84999d",
+      "family": "w3c-f-3",
+      "subject_type": "report",
+      "file": "vectors/v98252c989e84999d.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-003"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-003"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v9b7c8cf7d1b9f679",
+      "family": "w3c-f-26",
+      "subject_type": "report",
+      "file": "vectors/v9b7c8cf7d1b9f679.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v9c68a108ed63da63",
+      "family": "w3c-f-21",
+      "subject_type": "report",
+      "file": "vectors/v9c68a108ed63da63.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-021"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-021"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v9cfb2c8197757948",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/v9cfb2c8197757948.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v9dc96e6ca225e6e2",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/v9dc96e6ca225e6e2.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "v9f618dfd3e44b84a",
+      "family": "w3c-f-23",
+      "subject_type": "report",
+      "file": "vectors/v9f618dfd3e44b84a.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "va0620b488f2ff2f5",
+      "family": "w3c-f-28",
+      "subject_type": "report",
+      "file": "vectors/va0620b488f2ff2f5.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "va18bfa567e0405b7",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/va18bfa567e0405b7.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "va19ba1b3f9f382bb",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/va19ba1b3f9f382bb.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "va1e910d25ebbb2c4",
+      "family": "w3c-f-23",
+      "subject_type": "report",
+      "file": "vectors/va1e910d25ebbb2c4.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "va213bada85cc9abe",
+      "family": "w3c-f-13",
+      "subject_type": "report",
+      "file": "vectors/va213bada85cc9abe.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "va32bdaeb5f8aed8f",
+      "family": "arm-f-steps",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/va32bdaeb5f8aed8f.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "va3c277aa6743807a",
+      "family": "w3c-f-24",
+      "subject_type": "report",
+      "file": "vectors/va3c277aa6743807a.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-024"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-024"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "va4fc9fc8f711bd58",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/va4fc9fc8f711bd58.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "va86e962a5024f152",
+      "family": "w3c-f-29",
+      "subject_type": "report",
+      "file": "vectors/va86e962a5024f152.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-029"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-029"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "va91d537fa714f2d3",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/va91d537fa714f2d3.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "va934761de6c65857",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/va934761de6c65857.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-001"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-001"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vaac3a24b2552738b",
+      "family": "arm-f-serialization",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vaac3a24b2552738b.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-017"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-017"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vaad2cb64c5b0646b",
+      "family": "w3c-f-6",
+      "subject_type": "report",
+      "file": "vectors/vaad2cb64c5b0646b.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vab06fd8893fe7da9",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vab06fd8893fe7da9.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vab508347e605c0af",
+      "family": "w3c-f-20",
+      "subject_type": "report",
+      "file": "vectors/vab508347e605c0af.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-020"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-020"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vac685ed4f2b7b142",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vac685ed4f2b7b142.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vaca8620fefade22f",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vaca8620fefade22f.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vaeb76896b202e837",
+      "family": "w3c-f-13",
+      "subject_type": "report",
+      "file": "vectors/vaeb76896b202e837.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-013"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-013"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb11134a37e7c0c2b",
+      "family": "w3c-f-1",
+      "subject_type": "report",
+      "file": "vectors/vb11134a37e7c0c2b.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-001"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-001"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb195f23e8436fd19",
+      "family": "w3c-f-13",
+      "subject_type": "report",
+      "file": "vectors/vb195f23e8436fd19.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb1c8d4729c06472c",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vb1c8d4729c06472c.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb450f39bace98641",
+      "family": "lcd-f-consumer",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/vb450f39bace98641.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb4de5d37845a1546",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vb4de5d37845a1546.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb608f4ddfcc00a20",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/vb608f4ddfcc00a20.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "LCD-R-004"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "LCD-R-004"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb684dfb39487fcb1",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vb684dfb39487fcb1.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb6be26b7111909cb",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vb6be26b7111909cb.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb6e8cb7973f1fab5",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vb6e8cb7973f1fab5.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb7065104515600ba",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/vb7065104515600ba.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb7ec64962345ec63",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vb7ec64962345ec63.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vb8c546609d4103b0",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vb8c546609d4103b0.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vbb1688d0226174aa",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vbb1688d0226174aa.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vbba71aa9e6a41e1c",
+      "family": "arm-f-serialization",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vbba71aa9e6a41e1c.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vbbeed17aecbe9848",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vbbeed17aecbe9848.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vbca0a5030104e2f3",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vbca0a5030104e2f3.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vbdcffc81f99b2078",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vbdcffc81f99b2078.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vbdf5d0dc993f1310",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vbdf5d0dc993f1310.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vbe6937292f4f1614",
+      "family": "w3c-f-10",
+      "subject_type": "report",
+      "file": "vectors/vbe6937292f4f1614.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-010"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-010"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vbec908a03edd1250",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vbec908a03edd1250.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vbf88ec51ebd083b6",
+      "family": "arm-f-steps",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vbf88ec51ebd083b6.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vc17bb5b854981008",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vc17bb5b854981008.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-009"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-009"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vc2cab6dea09f0a3b",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vc2cab6dea09f0a3b.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vc39c75a8c00ab957",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vc39c75a8c00ab957.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vc58647a590befbb7",
+      "family": "w3c-f-13",
+      "subject_type": "report",
+      "file": "vectors/vc58647a590befbb7.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-013"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-013"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vc653bb099d9c5839",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vc653bb099d9c5839.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vc7c310827b9dbd10",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vc7c310827b9dbd10.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vc938b2ab36cae34a",
+      "family": "w3c-f-27",
+      "subject_type": "report",
+      "file": "vectors/vc938b2ab36cae34a.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vcbd0eaef95bc9181",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/vcbd0eaef95bc9181.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "LCD-R-010"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "LCD-R-010"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vcc4002f4776bac10",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vcc4002f4776bac10.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vccc374459c05dd52",
+      "family": "arm-f-steps",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vccc374459c05dd52.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-006"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-006"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vcd6021208e8e8a6e",
+      "family": "lcd-f-consumer",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/vcd6021208e8e8a6e.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vcdb9ae63a12852a8",
+      "family": "arm-f-serialization",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vcdb9ae63a12852a8.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vcf1cbb85d729dcd1",
+      "family": "w3c-f-26",
+      "subject_type": "report",
+      "file": "vectors/vcf1cbb85d729dcd1.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-026"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-026"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd02cc7abe1dbc2bf",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vd02cc7abe1dbc2bf.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-011"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-011"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd1eb6a3fb13eb97d",
+      "family": "w3c-f-12",
+      "subject_type": "report",
+      "file": "vectors/vd1eb6a3fb13eb97d.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-012"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-012"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd27e483fe63e78c0",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vd27e483fe63e78c0.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd2a25cb35e1b8bce",
+      "family": "w3c-f-23",
+      "subject_type": "report",
+      "file": "vectors/vd2a25cb35e1b8bce.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd2ae28ba9140bc89",
+      "family": "w3c-f-28",
+      "subject_type": "report",
+      "file": "vectors/vd2ae28ba9140bc89.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-028"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-028"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd2e50306dcd6c470",
+      "family": "w3c-f-23",
+      "subject_type": "report",
+      "file": "vectors/vd2e50306dcd6c470.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-023"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-023"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd302fdc2d7a97e6e",
+      "family": "arm-f-serialization",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vd302fdc2d7a97e6e.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-018"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-018"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd3e84d6a85cb6a0f",
+      "family": "w3c-f-24",
+      "subject_type": "report",
+      "file": "vectors/vd3e84d6a85cb6a0f.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd4eb88d206b3abdd",
+      "family": "w3c-f-16",
+      "subject_type": "report",
+      "file": "vectors/vd4eb88d206b3abdd.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd53bcd623743858d",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vd53bcd623743858d.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd64679c8b7f9e736",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vd64679c8b7f9e736.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd7d23c0d86701fc6",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vd7d23c0d86701fc6.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd841f2eea4d0651e",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vd841f2eea4d0651e.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd85d62c0213a9749",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vd85d62c0213a9749.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd88fd757419269aa",
+      "family": "lcd-f-consumer",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/vd88fd757419269aa.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vd8d93fd735111aa5",
+      "family": "w3c-f-13",
+      "subject_type": "report",
+      "file": "vectors/vd8d93fd735111aa5.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vdcb0849fc754aaea",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vdcb0849fc754aaea.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vdcbd067d047bfbd0",
+      "family": "w3c-f-7",
+      "subject_type": "report",
+      "file": "vectors/vdcbd067d047bfbd0.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-007"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-007"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vdec1361509de89d4",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vdec1361509de89d4.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vdf05d359490e7833",
+      "family": "w3c-f-18",
+      "subject_type": "report",
+      "file": "vectors/vdf05d359490e7833.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve14d385f9bcbd83b",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/ve14d385f9bcbd83b.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve2460634487d8a8f",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/ve2460634487d8a8f.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve2b3a699bc06e53d",
+      "family": "lcd-f-consumer",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/ve2b3a699bc06e53d.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "LCD-R-008"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "LCD-R-008"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve2c7ff41cba0be5d",
+      "family": "arm-f-steps",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/ve2c7ff41cba0be5d.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-007"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-007"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve3fcd2bc70913ea2",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/ve3fcd2bc70913ea2.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-005"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-005"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve4744745405812b9",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/ve4744745405812b9.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve4b9c82536808f52",
+      "family": "arm-f-totals",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/ve4b9c82536808f52.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-012"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-012"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve53f0521c7e3a30c",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/ve53f0521c7e3a30c.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve5819dc9edb1f47b",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/ve5819dc9edb1f47b.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve5d916a50130739e",
+      "family": "w3c-f-gaps",
+      "subject_type": "report",
+      "file": "vectors/ve5d916a50130739e.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve70386fdb6f071d3",
+      "family": "w3c-f-1",
+      "subject_type": "report",
+      "file": "vectors/ve70386fdb6f071d3.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve7520b18160365d2",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/ve7520b18160365d2.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve784e75da615e795",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/ve784e75da615e795.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve9c436f93e42e394",
+      "family": "w3c-f-29",
+      "subject_type": "report",
+      "file": "vectors/ve9c436f93e42e394.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-029"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-029"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve9cefed56bbc8359",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/ve9cefed56bbc8359.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "ve9ebdb7db94e0b9d",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/ve9ebdb7db94e0b9d.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vea3ee7919ceb2e10",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vea3ee7919ceb2e10.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vea598711b897286e",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vea598711b897286e.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vea80ece35200e349",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vea80ece35200e349.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vec36e393a92b69eb",
+      "family": "w3c-f-4",
+      "subject_type": "report",
+      "file": "vectors/vec36e393a92b69eb.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-004"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-004"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vecd8b7bb20fed3a3",
+      "family": "w3c-f-21",
+      "subject_type": "report",
+      "file": "vectors/vecd8b7bb20fed3a3.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vecddffbd8678e5ef",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vecddffbd8678e5ef.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-004"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-004"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vee997c119f09258b",
+      "family": "w3c-f-11",
+      "subject_type": "report",
+      "file": "vectors/vee997c119f09258b.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-011"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-011"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vef09761654b57a92",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vef09761654b57a92.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-022"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-022"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vf0793a8c5fc26e52",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vf0793a8c5fc26e52.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vf1e99cf0310cc1c6",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vf1e99cf0310cc1c6.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-014"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-014"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vf2fde28af69a1348",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vf2fde28af69a1348.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vf374114fe7f28e7d",
+      "family": "w3c-f-2",
+      "subject_type": "report",
+      "file": "vectors/vf374114fe7f28e7d.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-002"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-002"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vf3af943ff1bf7375",
+      "family": "arm-f-serialization",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vf3af943ff1bf7375.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-021"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-021"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vf414a4c9065ad7b8",
+      "family": "arm-f-steps",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vf414a4c9065ad7b8.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "ARM-R-015"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "ARM-R-015"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vf7334aa7dcf00826",
+      "family": "arm-f-run",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vf7334aa7dcf00826.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vf753bb908231e0a1",
+      "family": "lcd-f-consumer",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/vf753bb908231e0a1.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vf82e507d268fed9d",
+      "family": "w3c-f-4",
+      "subject_type": "report",
+      "file": "vectors/vf82e507d268fed9d.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vf86d92beb5a12905",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/vf86d92beb5a12905.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "LCD-R-002"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "LCD-R-002"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vf9b5623144960dda",
+      "family": "w3c-f-9",
+      "subject_type": "report",
+      "file": "vectors/vf9b5623144960dda.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vfa24e4f45c2e826e",
+      "family": "w3c-f-20",
+      "subject_type": "report",
+      "file": "vectors/vfa24e4f45c2e826e.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vfa79ad0a7bd957b9",
+      "family": "w3c-f-11",
+      "subject_type": "report",
+      "file": "vectors/vfa79ad0a7bd957b9.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vfbc5db1c2a012359",
+      "family": "w3c-f-15",
+      "subject_type": "report",
+      "file": "vectors/vfbc5db1c2a012359.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-015"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-015"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vfbd7379026575f04",
+      "family": "w3c-f-gaps",
+      "subject_type": "report",
+      "file": "vectors/vfbd7379026575f04.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vfbf04f56b585e3fa",
+      "family": "w3c-f-disensor",
+      "subject_type": "report",
+      "file": "vectors/vfbf04f56b585e3fa.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "W3C-R-016"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "W3C-R-016"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vfeb5d1872929ab35",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/vfeb5d1872929ab35.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vff5545c0760d7544",
+      "family": "arm-f-usage",
+      "subject_type": "agent-run-metrics",
+      "file": "vectors/vff5545c0760d7544.json",
+      "computed_verdict": "accept",
+      "computed_rejects": [],
+      "expected_verdict": "accept",
+      "expected_rejects": [],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    },
+    {
+      "id": "vff8f75223d6658ef",
+      "family": "lcd-f-publisher",
+      "subject_type": "llm-context-discovery",
+      "file": "vectors/vff8f75223d6658ef.json",
+      "computed_verdict": "reject",
+      "computed_rejects": [
+        "LCD-R-001"
+      ],
+      "expected_verdict": "reject",
+      "expected_rejects": [
+        "LCD-R-001"
+      ],
+      "verdict_match": true,
+      "rejects_match": true,
+      "agree": true
+    }
+  ]
+}

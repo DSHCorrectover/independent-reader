@@ -1,0 +1,154 @@
+{
+  "suite": "anchored-record-chain/v1",
+  "adjudicator": "independent_anchored_full.py (shares no code with upstream)",
+  "corpus_dir": "/tmp/a176/agent_evidence_vectors/corpora/vectors-anchored-chain",
+  "corpusDigest": "a92cf47c64f905ec6a57c4bf624c2667c075da4a76d58b4d251584831202dc86",
+  "summary": {
+    "total": 14,
+    "agree": 14,
+    "disagree": 0,
+    "all_agree": true
+  },
+  "results": [
+    {
+      "id": "intact",
+      "expected_decision": "verified",
+      "expected_reason": "chain_anchored",
+      "computed_decision": "verified",
+      "computed_reason": "chain_anchored",
+      "agree": true,
+      "manifest_storeSignaturesVerify": true,
+      "edit": "control: no edit, anchor on the newest record"
+    },
+    {
+      "id": "records-after-last-anchor",
+      "expected_decision": "verified",
+      "expected_reason": "records_after_last_anchor",
+      "computed_decision": "verified",
+      "computed_reason": "records_after_last_anchor",
+      "agree": true,
+      "manifest_storeSignaturesVerify": true,
+      "edit": "control: no edit, two records written after the last anchor"
+    },
+    {
+      "id": "t1-content-tamper",
+      "expected_decision": "rejected",
+      "expected_reason": "signature_invalid",
+      "computed_decision": "rejected",
+      "computed_reason": "signature_invalid",
+      "agree": true,
+      "manifest_storeSignaturesVerify": false,
+      "edit": "T1: one record's fact changed in place"
+    },
+    {
+      "id": "t2-tail-removal",
+      "expected_decision": "rejected",
+      "expected_reason": "anchored_head_missing",
+      "computed_decision": "rejected",
+      "computed_reason": "anchored_head_missing",
+      "agree": true,
+      "manifest_storeSignaturesVerify": true,
+      "edit": "T2: the two newest records deleted, both written before the last anchor"
+    },
+    {
+      "id": "t2-tail-removal-after-last-anchor",
+      "expected_decision": "verified",
+      "expected_reason": "chain_anchored",
+      "computed_decision": "verified",
+      "computed_reason": "chain_anchored",
+      "agree": true,
+      "manifest_storeSignaturesVerify": true,
+      "edit": "T2 limit: the two newest records deleted, both written after the last anchor; the bytes are an honest store anchored at its head"
+    },
+    {
+      "id": "t3-middle-deletion",
+      "expected_decision": "rejected",
+      "expected_reason": "chain_link_broken",
+      "computed_decision": "rejected",
+      "computed_reason": "chain_link_broken",
+      "agree": true,
+      "manifest_storeSignaturesVerify": true,
+      "edit": "T3: a record that is neither first nor last deleted"
+    },
+    {
+      "id": "t4-reorder",
+      "expected_decision": "rejected",
+      "expected_reason": "chain_link_broken",
+      "computed_decision": "rejected",
+      "computed_reason": "chain_link_broken",
+      "agree": true,
+      "manifest_storeSignaturesVerify": true,
+      "edit": "T4: two records swapped"
+    },
+    {
+      "id": "t5-forged-insertion",
+      "expected_decision": "rejected",
+      "expected_reason": "signature_invalid",
+      "computed_decision": "rejected",
+      "computed_reason": "signature_invalid",
+      "agree": true,
+      "manifest_storeSignaturesVerify": false,
+      "edit": "T5: a record of the adversary's authorship appended, signed with a key the consumer does not trust"
+    },
+    {
+      "id": "t6-cross-context-replay",
+      "expected_decision": "rejected",
+      "expected_reason": "record_from_other_chain",
+      "computed_decision": "rejected",
+      "computed_reason": "record_from_other_chain",
+      "agree": true,
+      "manifest_storeSignaturesVerify": true,
+      "edit": "T6: a genuine record of context B copied over one of A"
+    },
+    {
+      "id": "t7-rollback-older-record",
+      "expected_decision": "rejected",
+      "expected_reason": "chain_link_broken",
+      "computed_decision": "rejected",
+      "computed_reason": "chain_link_broken",
+      "agree": true,
+      "manifest_storeSignaturesVerify": true,
+      "edit": "T7: a genuine older record of A copied over A's newest record"
+    },
+    {
+      "id": "t8-metadata-tamper",
+      "expected_decision": "rejected",
+      "expected_reason": "signature_invalid",
+      "computed_decision": "rejected",
+      "computed_reason": "signature_invalid",
+      "agree": true,
+      "manifest_storeSignaturesVerify": false,
+      "edit": "T8: a record's owner changed, content kept"
+    },
+    {
+      "id": "t9-snapshot-rollback",
+      "expected_decision": "rejected",
+      "expected_reason": "anchored_head_missing",
+      "computed_decision": "rejected",
+      "computed_reason": "anchored_head_missing",
+      "agree": true,
+      "manifest_storeSignaturesVerify": true,
+      "edit": "T9: the whole store restored from a copy taken before the newest record was written; the anchor was taken after it"
+    },
+    {
+      "id": "rollback-to-abandoned-branch",
+      "expected_decision": "rejected",
+      "expected_reason": "anchored_head_mismatch",
+      "computed_decision": "rejected",
+      "computed_reason": "anchored_head_mismatch",
+      "agree": true,
+      "manifest_storeSignaturesVerify": true,
+      "edit": "rollback: the store restored from a backup taken on a branch the producer signed and later abandoned; every record is genuine and every link holds"
+    },
+    {
+      "id": "tail-removal-reanchored",
+      "expected_decision": "rejected",
+      "expected_reason": "anchor_signature_invalid",
+      "computed_decision": "rejected",
+      "computed_reason": "anchor_signature_invalid",
+      "agree": true,
+      "manifest_storeSignaturesVerify": true,
+      "edit": "T2 followed by a new anchor the adversary signed over the shortened store"
+    }
+  ]
+}
