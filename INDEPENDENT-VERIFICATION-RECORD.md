@@ -96,8 +96,13 @@ anchored_head_mismatch / anchor_signature_invalid`
 2. 全量 v0.2 — Message-ID: `independent-reader-v0.2-20261010@correctover.com`
 3. **勘误追平** — Subject: "[CORRECTION] Re: An independent v0.1 reader..."
    Message-ID: `independent-reader-v0.17.6-correction-20261010@correctover.com`
+4. **仓库/镜像更正** — Subject: "[CORRECTION] repository location + evidence mirror..."
+   Message-ID: `independent-reader-url-correction-20261010@correctover.com`
 
 均待 W3C moderation 审核入档。
+
+**证据镜像站：** https://independent-reader-evidence.pages.dev/
+（Cloudflare Pages，单页静态，项目名 independent-reader-evidence）
 
 ---
 
