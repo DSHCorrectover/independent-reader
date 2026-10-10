@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Independent Reader · 951 向量独立裁决记录</title>
+<meta name="description" content="一个与参考 reader 零代码共享的独立实现，在 agent-evidence-vectors v0.17.6 全部 951 个向量上复现裁决，零真实不一致。">
+<style>
+:root{
+  --ink:#14181d; --ink-2:#3c4652; --muted:#6b7684;
+  --bg:#f6f7f9; --card:#ffffff; --line:#e3e7ec;
+  --accent:#0f766e; --accent-ink:#0d5d57; --accent-soft:#e6f4f2;
+  --amber:#92590a; --amber-soft:#fdf3e0;
+  --ok:#15803d; --ok-soft:#e9f6ee;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --sans:system-ui,-apple-system,"Segoe UI",Roboto,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);
+  font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--accent-ink)}
+a:focus-visible,button:focus-visible{outline:3px solid rgba(15,118,110,.35);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* hero */
+.hero{background:linear-gradient(160deg,#0e1b29 0%,#10343a 55%,#0f3d38 100%);color:#eef4f4;padding:64px 0 56px}
+.hero .kicker{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#7fcfc4;margin:0 0 18px}
+.hero h1{font-size:clamp(28px,4.4vw,44px);line-height:1.2;margin:0 0 16px;font-weight:750;letter-spacing:-.01em}
+.hero p.lead{font-size:clamp(15px,1.8vw,18px);color:#c3d4d4;max-width:760px;margin:0 0 36px}
+.bignum{display:flex;flex-wrap:wrap;gap:16px}
+.bignum .cell{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+  border-radius:14px;padding:18px 24px;min-width:150px}
+.bignum .v{font-size:34px;font-weight:750;line-height:1.1;font-variant-numeric:tabular-nums}
+.bignum .v small{font-size:18px;color:#9fc3bd;font-weight:600}
+.bignum .l{font-size:13px;color:#9fb6b4;margin-top:4px}
+.hero .meta{margin-top:30px;font-size:13.5px;color:#8fa8a6;font-family:var(--mono)}
+.hero .meta span{margin-right:20px}
+
+/* nav */
+nav.toc{position:sticky;top:0;z-index:10;background:rgba(246,247,249,.92);backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px}
+nav.toc a{font-size:14px;color:var(--ink-2);text-decoration:none;padding:6px 12px;border-radius:8px;white-space:nowrap}
+nav.toc a:hover{background:#e9edf1;color:var(--ink)}
+
+section{padding:52px 0 8px}
+h2{font-size:26px;margin:0 0 8px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin:0 0 28px;max-width:720px}
+h3{font-size:18px;margin:32px 0 10px}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px}
+.card .n{font-size:28px;font-weight:730;font-variant-numeric:tabular-nums;color:var(--accent-ink)}
+.card .t{font-weight:650;margin:2px 0 4px}
+.card .d{font-size:14px;color:var(--muted);margin:0}
+
+/* table */
+.tbl-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:15px}
+caption{text-align:left;padding:16px 20px 0;font-weight:650;color:var(--ink)}
+th,td{padding:13px 20px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;color:var(--muted);font-weight:650;background:#fafbfc}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;font-family:var(--mono)}
+tr:last-child td{border-bottom:none}
+tfoot td{font-weight:700;background:#fafbfc}
+.pill{display:inline-block;font-size:12.5px;font-weight:650;padding:2px 10px;border-radius:999px}
+.pill.ok{background:var(--ok-soft);color:var(--ok)}
+.pill.deep{background:var(--accent-soft);color:var(--accent-ink)}
+.pill.struct{background:#eef1f4;color:var(--ink-2)}
+
+/* gate list */
+.gates{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+details.gate{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0}
+details.gate summary{cursor:pointer;list-style:none;padding:18px 22px;font-weight:650;display:flex;align-items:center;gap:10px}
+details.gate summary::-webkit-details-marker{display:none}
+details.gate summary .tag{margin-left:auto;font-family:var(--mono);font-size:12px;color:var(--accent-ink);
+  background:var(--accent-soft);padding:3px 10px;border-radius:999px}
+details.gate[open] summary{border-bottom:1px solid var(--line)}
+details.gate .body{padding:14px 22px 18px;font-size:14.5px;color:var(--ink-2)}
+details.gate ul{margin:8px 0 0;padding-left:20px}
+details.gate li{margin:4px 0}
+.chev{transition:transform .2s ease;color:var(--muted)}
+details.gate[open] .chev{transform:rotate(90deg)}
+
+.note{background:var(--amber-soft);border:1px solid #ecd9ae;border-left:4px solid #c98a20;
+  border-radius:10px;padding:14px 18px;font-size:14.5px;color:#5b4212;margin:20px 0}
+.note strong{color:var(--amber)}
+
+.codecheck{background:#0f1720;color:#d7e3e4;border-radius:12px;padding:18px 20px;overflow-x:auto;
+  font-family:var(--mono);font-size:13.5px;line-height:1.7;margin:16px 0}
+.codecheck .c{color:#7fd3c2}
+.codecheck .m{color:#8ba3ad}
+
+ol.mail{counter-reset:m;list-style:none;padding:0;margin:0}
+ol.mail li{counter-increment m;background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:14px 18px 14px 52px;position:relative;margin:10px 0;font-size:14.5px}
+ol.mail li::before{content:counter(m);position:absolute;left:16px;top:14px;width:24px;height:24px;
+  background:var(--accent-soft);color:var(--accent-ink);border-radius:50%;
+  display:grid;place-items:center;font-size:13px;font-weight:700}
+ol.mail .mid{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+
+ul.files{columns:2;column-gap:40px;font-size:14.5px;color:var(--ink-2);padding-left:20px}
+ul.files li{margin:4px 0;break-inside:avoid}
+ul.files code{font-family:var(--mono);font-size:13px;background:#eef1f4;padding:1px 6px;border-radius:5px}
+
+footer{margin-top:56px;border-top:1px solid var(--line);padding:28px 0 48px;color:var(--muted);font-size:13.5px}
+footer .sig{font-weight:650;color:var(--ink-2)}
+
+@media (max-width:640px){
+  .hero{padding:44px 0 40px}
+  ul.files{columns:1}
+  .bignum .cell{flex:1 1 140px}
+}
+@media print{
+  nav.toc{display:none}
+  body{background:#fff}
+  .hero{background:#fff;color:#000;border-bottom:2px solid #000}
+  .hero .kicker,.hero p.lead,.hero .meta{color:#333}
+  .bignum .cell{border:1px solid #999;background:#fff;color:#000}
+  .bignum .v,.bignum .l{color:#000}
+  section{padding:24px 0 0}
+  details.gate .body{display:block}
+  details.gate{break-inside:avoid}
+  a{color:#000;text-decoration:underline}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker">W3C public-agent-conformance · issue 0089</p>
+    <h1>独立 Reader 全量验证：951 个向量，零代码共享，零真实不一致</h1>
+    <p class="lead">为回应 “It does not answer 0089” 的质疑，我们用一个与参考 reader 不共享任何代码的独立实现，从原始 test-case 字节出发，对最新发布版 agent-evidence-vectors <strong>v0.17.6</strong> 的全部 951 个向量逐条重新裁决。</p>
+    <div class="bignum">
+      <div class="cell"><div class="v">951<small>/951</small></div><div class="l">裁决一致</div></div>
+      <div class="cell"><div class="v">559</div><div class="l">完整语义深验</div></div>
+      <div class="cell"><div class="v">392</div><div class="l">结构 / 绑定层</div></div>
+      <div class="cell"><div class="v">0</div><div class="l">真实不一致</div></div>
+    </div>
+    <div class="meta">
+      <span>DATE 2026-10-10</span>
+      <span>VERSION v0.17.6</span>
+      <span>CORPORA 16</span>
+      <span>AUTHOR Guigui Wang</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="页内导航">
+  <div class="wrap">
+    <a href="#result">总账</a>
+    <a href="#timeline">版本追平</a>
+    <a href="#semantics">语义覆盖</a>
+    <a href="#independence">独立性</a>
+    <a href="#mail">对外邮件</a>
+    <a href="#artifacts">产物</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section id="result">
+  <h2>最终总账（v0.17.6）</h2>
+  <p class="sub">四个独立脚本覆盖全部语义型 corpus；其余 12 个 corpus 在结构与绑定层逐向量核对，并独立重算 corpusDigest。</p>
+  <div class="tbl-scroll">
+    <table>
+      <caption>951 个向量的分层裁决结果</caption>
+      <thead>
+        <tr><th scope="col">Suite</th><th class="num" scope="col">向量数</th><th class="num" scope="col">一致</th><th scope="col">验证深度</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>receipt-signature</td><td class="num">25</td><td class="num">25/25</td><td><span class="pill deep">完整语义</span> Ed25519 + JCS + validity window + chain-link</td></tr>
+        <tr><td>adversarial-execution-evidence</td><td class="num">285</td><td class="num">285/285</td><td><span class="pill deep">GATE 0+1+2</span></td></tr>
+        <tr><td>w3c-report-v01</td><td class="num">235</td><td class="num">235/235</td><td><span class="pill deep">完整 rejections()</span> W3C-R / ARM-R / LCD-R</td></tr>
+        <tr><td>anchored-record-chain（v0.17.6 新增）</td><td class="num">14</td><td class="num">14/14</td><td><span class="pill deep">签名 + chain-link + anchor</span></td></tr>
+        <tr><td>其他 12 个 corpus</td><td class="num">392</td><td class="num">392/392</td><td><span class="pill struct">结构 / 绑定层</span> corpusDigest 独立复现</td></tr>
+      </tbody>
+      <tfoot>
+        <tr><td>合计</td><td class="num">951</td><td class="num">951/951</td><td><span class="pill ok">零真实不一致</span></td></tr>
+      </tfoot>
+    </table>
+  </div>
+</section>
+
+<section id="timeline">
+  <h2>版本追平：一条诚实时间线</h2>
+  <p class="sub">验证过程中我们先发现自己的口径瑕疵，又发现参考包已发新版，于是主动追平并发勘误，封死“验的是旧版”的质疑空间。</p>
+  <div class="cards">
+    <div class="card"><div class="n">v0.17.4</div><div class="t">最初基准：15 corpus / 933 向量</div><p class="d">13/16 corpusDigest 独立重算成功，receipt-signature 25/25 完整语义。</p></div>
+    <div class="card"><div class="n">933≠16</div><div class="t">发现口径瑕疵</div><p class="d">初帖写 “933 across 16 corpora”，但第 16 个 self-reported-record（11 条）是 git-only，不在 wheel 内。</p></div>
+    <div class="card"><div class="n">v0.17.6</div><div class="t">参考包已发新版：16 corpus / 951</div><p class="d">adversarial 281→285（+4），新增 anchored-record-chain suite（14 case）。</p></div>
+    <div class="card"><div class="n">4/4</div><div class="t">旧脚本重跑全过 + 新建第 4 脚本</div><p class="d">主动发勘误追平最新版，版本差质疑被预先关闭。</p></div>
+  </div>
+  <div class="note"><strong>口径说明：</strong>wheel 包口径为 951/16；若按 git 仓库（含 self-reported-record）另有 11 条 git-only 向量。本页所有数字均以 v0.17.6 wheel 为准。</div>
+</section>
+
+<section id="semantics">
+  <h2>四个 Suite 的语义覆盖</h2>
+  <p class="sub">不是只比最终 accept/reject：每一层规则、每一种拒绝码都从字节独立推导，MANIFEST 的 expected 只在裁决完成后用于对比。</p>
+  <div class="gates">
+
+    <details class="gate" open>
+      <summary><span class="chev">▸</span>receipt-signature · 25 <span class="tag">25/25</span></summary>
+      <div class="body">
+        Ed25519 验签、JCS（RFC 8785）规范化、validity window 时间窗校验、chain-link 哈希链。
+        <ul><li>签名与载荷均从原始字节重算</li><li>过期 / 篡改 / 断链向量全部判对</li></ul>
+      </div>
+    </details>
+
+    <details class="gate" open>
+      <summary><span class="chev">▸</span>adversarial-execution-evidence · 285 <span class="tag">accept 63 / reject 220 / indet 2</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>GATE 0：</strong>statement/predicate 形状、vocabulary_digest、corpus_digest、coverage 行列与 shape、records 结构、fail-closed signature-empty、payload strict-b64 + I-JSON + JCS round-trip、kind 约束</li>
+          <li><strong>GATE 1：</strong>per-substrate-row refs、payload 有效性、class 匹配、kind 约束、method cap</li>
+          <li><strong>8 项 commitment：</strong>clean-row-contradicted / interception-orphaned / observed-set / sealed-present / carried-cover / seal-attacks / assessed-subset / attribution</li>
+          <li>result 从 coverage + labels + caught + rows 确定性重算</li>
+          <li><strong>GATE 2：</strong>Ed25519 签名验证（派生测试密钥）</li>
+          <li>2 条 indeterminate 的多条 firing code 与 MANIFEST 全部 readings 吻合</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="gate" open>
+      <summary><span class="chev">▸</span>w3c-report-v01 · 235 <span class="tag">accept 117 / reject 118</span></summary>
+      <div class="body">
+        <ul>
+          <li><strong>report（169）：</strong>W3C-R-001~029，29 条规则</li>
+          <li><strong>agent-run-metrics（44）：</strong>ARM-R-001~022，22 条规则</li>
+          <li><strong>llm-context-discovery（22）：</strong>LCD-R-001~011，11 条规则</li>
+          <li>RFC 8785 面：U+007F、大整数（≥1e+21）、-0、键排序（code point vs UTF-16 code unit）、leaf 中 float → W3C-R-020 拒整 report、check-set root、moved⊄compared</li>
+          <li>高频触发：W3C-R-016 ×43、W3C-R-015 ×5、W3C-R-013 ×4、W3C-R-023 ×4、W3C-R-020 ×3</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="gate" open>
+      <summary><span class="chev">▸</span>anchored-record-chain · 14 <span class="tag">8 种 reason</span></summary>
+      <div class="body">
+        8 种 decision/reason 全部独立判对：chain_anchored / records_after_last_anchor / signature_invalid / anchored_head_missing / chain_link_broken / record_from_other_chain / anchored_head_mismatch / anchor_signature_invalid。
+        <ul>
+          <li>关键认知：只验签名会漏掉 T2/T3/T4/T7/T9、rollback 与 reanchored——只有 chain-link 和 anchor 能抓</li>
+          <li>正确放行 t2-tail-removal-after-last-anchor（删除 anchor 未覆盖的记录 = 诚实 store）</li>
+          <li>正确拒绝 tail-removal-reanchored（anchor 签名无效）</li>
+        </ul>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<section id="independence">
+  <h2>独立性保证</h2>
+  <p class="sub">独立实现可以读上游源码与 spec 来推导规则，但绝不 import、exec、eval 或执行上游代码。</p>
+  <div class="codecheck"><pre><span class="m"># 四个脚本统一检查：禁止 import 上游包</span>
+$ grep -nE <span class="c">"^import agent_evidence|^from agent_evidence"</span> independent_*.py
+<span class="m"># → 无任何输出（CLEAN）</span></pre></div>
+  <div class="cards">
+    <div class="card"><div class="t">只读源码 / spec 推导规则</div><p class="d">不 import、不 exec、不 eval、不复制执行上游任何代码。</p></div>
+    <div class="card"><div class="t">裁决只来自原始字节</div><p class="d">每个判断从 test-case / statement / store 的原始字节得出。</p></div>
+    <div class="card"><div class="t">expected 仅事后对比</div><p class="d">MANIFEST 的期望结果不参与裁决，只在裁决完成后核对。</p></div>
+    <div class="card"><div class="t">信任起点 cosign.pub</div><p class="d">Ed25519 公钥来自 release/cosign.pub；底层原语 JCS / PAE / Merkle / strict-b64 / I-JSON 全部从零重写。</p></div>
+  </div>
+</section>
+
+<section id="mail">
+  <h2>对外邮件</h2>
+  <p class="sub">发件 Guigui Wang &lt;wangguigui@correctover.com&gt;，收件 W3C public-agent-conformance 邮件组，三封均被 SMTP 接受，待 moderation 入档。</p>
+  <ol class="mail">
+    <li>初版回帖 — “Re: An independent v0.1 reader that shares no code…”</li>
+    <li>全量 v0.2 回帖 <div class="mid">Message-ID: independent-reader-v0.2-20261010@correctover.com</div></li>
+    <li>[CORRECTION] 勘误追平 v0.17.6 <div class="mid">Message-ID: independent-reader-v0.17.6-correction-20261010@correctover.com</div></li>
+  </ol>
+</section>
+
+<section id="artifacts">
+  <h2>可复跑产物</h2>
+  <p class="sub">全部脚本与逐条结果 JSON 已公开，任何第三方都可以重跑验证。代码仓库：<a href="https://github.com/DSHCorrectover/independent-reader" target="_blank" rel="noopener noreferrer">github.com/DSHCorrectover/independent-reader</a>。邮件组存档见 <a href="https://lists.w3.org/Archives/Public/public-agent-conformance/" target="_blank" rel="noopener noreferrer">W3C public-agent-conformance 归档</a>。</p>
+  <ul class="files">
+    <li><code>independent_reader.py</code> 原始单 suite（348 行）</li>
+    <li><code>independent_reader_full.py</code> 16 corpus 结构层（941 行）</li>
+    <li><code>independent_adversarial_full.py</code> 285 向量完整语义（64KB）</li>
+    <li><code>independent_w3creport_full.py</code> 235 向量完整规则（44KB）</li>
+    <li><code>independent_anchored_full.py</code> 14 case 锚链</li>
+    <li><code>adversarial_full_results.json</code> adversarial 逐条结果</li>
+    <li><code>adjudication_results_*.json</code> w3c 逐条结果（93KB）</li>
+    <li><code>REPLY-0089-*.md</code> 三封帖稿</li>
+  </ul>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="sig">Guigui Wang · Correctover — AI Reliability™</p>
+    <p>0089 是正确的挑战：v0.1 不完整（只深验 1 个 suite）；v0.2 与 v0.17.6 勘误关闭了它。“reader 独立且正确”现已可由第三方重跑验证、记录在案。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  try{
+    var links=document.querySelectorAll('nav.toc a[href^="#"]');
+    links.forEach(function(a){
+      a.addEventListener('click',function(e){
+        var id=a.getAttribute('href').slice(1);
+        var t=document.getElementById(id);
+        if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}
+      });
+    });
+  }catch(err){/* 静态内容仍完整可读 */}
+})();
+</script>
+</body>
+</html>

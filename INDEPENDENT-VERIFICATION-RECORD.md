@@ -17,7 +17,7 @@
 | adversarial-execution-evidence | 285 | 285/285 | 完整 GATE 0+1+2 |
 | w3c-report-v01 | 235 | 235/235 | 完整 rejections()（W3C-R / ARM-R / LCD-R） |
 | anchored-record-chain（0.17.6 新增） | 14 | 14/14 | 签名 + chain-link + anchor 全独立 |
-| 其他 12 个 corpus（结构/绑定层） | 382 | 382/382 | 结构层 + corpusDigest 复现 |
+| 其他 12 个 corpus（结构/绑定层） | 392 | 392/392 | 结构层 + corpusDigest 复现 |
 | **合计** | **951** | **951/951** | — |
 
 语义深度验证：**559 条**（25 + 285 + 235 + 14）
