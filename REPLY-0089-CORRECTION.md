@@ -1,3 +1,5 @@
+> **Archival note (added 2026-11-10):** This is the text as posted to the list, kept verbatim. Any 951/951 figure in it is a producer-side result — same author as the reference reader, prior sight of the expected verdicts — and demonstrates deterministic reproduction, not blind independence. See "Scope" in README.md.
+
 Subject: [CORRECTION] Re: An independent v0.1 reader that shares no code with the reference reader
 
 To: public-agent-conformance@w3.org
