@@ -1,17 +1,21 @@
-# 独立 Reader 全量验证记录（关闭 W3C 0089）
+# 第二实现复现记录（回应 W3C 0089）
 
 **日期：** 2026-10-10
 **执行人：** Guigui Wang（Correctover — AI Reliability）
 **目标：** 回应 Nicolas Rocchia 在 public-agent-conformance 的质疑"It does not answer 0089"，
-用 shares no code 的独立实现逐向量复现参考 reader 裁决，彻底关闭 0089。
+用一个不共享参考 reader 任何代码的第二实现逐向量复现裁决，为 0089 提供可复现证据。
+
+**口径声明：** 本记录是**生产者侧第二实现**——与参考 reader 同一作者，写作时已知已发布的预期裁决。
+它证明的是「规则可只依据规范文本重新实现、已发布裁决可复现」，
+**不**主张盲测独立性（盲测需要从未见过预期计数的操作者）。
 
 ---
 
 ## 一、最终结果（最新版 v0.17.6）
 
-**Wheel 总计：951 个向量 / 16 个 corpus，独立裁决 951/951 一致，零真实不一致。**
+**Wheel 总计：951 个向量 / 16 个 corpus，第二实现裁决 951/951 一致，零真实不一致（生产者侧数字，非第三方数字）。**
 
-| Suite | 向量数 | 独立裁决 | 深度 |
+| Suite | 向量数 | 第二实现裁决 | 深度 |
 |---|---:|---:|---|
 | receipt-signature | 25 | 25/25 | 完整语义（Ed25519 + JCS + validity window + chain-link） |
 | adversarial-execution-evidence | 285 | 285/285 | 完整 GATE 0+1+2 |
@@ -77,13 +81,17 @@ anchored_head_mismatch / anchor_signature_invalid`
 
 ---
 
-## 四、独立性保证
+## 四、不共享代码的保证
 
 - 四个脚本 `grep -nE "^import agent_evidence|^from agent_evidence"` 均 **CLEAN**
 - 仅 read 上游源码/spec 推导规则，绝不 import / exec / eval / 执行上游代码
 - 裁决只从原始 test-case / statement 字节得出
 - MANIFEST 的 `expected` 仅做事后对比，不参与裁决
 - 信任起点：release/cosign.pub（Ed25519）
+
+**口径边界：** 以上保证的是「不依赖上游代码」，不是「盲测独立」。本实现与参考 reader 同一作者、
+写作时已知预期裁决，属**生产者侧第二实现**。同一作者的两份实现能互相抓住抄写错误，
+但抓不住对规范的共同误读——两份都继承了它。
 
 ---
 
@@ -127,6 +135,10 @@ anchored_head_mismatch / anchor_signature_invalid`
 
 ## 七、结论
 
-0089 是正确的挑战。v0.1 不完整（只深验 1 个 suite）；v0.2 + 0.17.6 勘误关闭了它。
-一个不共享参考 reader 任何代码的独立实现，在最新发布版的全部 **951 个向量**上复现裁决，
-未发现参考 reader 任何判错。"reader 独立且正确"现已可由第三方重跑验证、记录在案。
+0089 是正确的挑战。v0.1 不完整（只深验 1 个 suite）；v0.2 + 0.17.6 提供了完整覆盖。
+
+一个不共享参考 reader 任何代码的第二实现，在最新发布版的全部 **951 个向量**上复现裁决，
+未发现参考 reader 任何判错。这证明的是：**规则可以只依据规范文本重新实现，且已发布裁决可复现。**
+
+本记录**不**主张盲测独立性。真正的盲测需要从未见过预期计数的操作者；这类外部 run
+单独记录在参考仓库的 `RUNS.md`，每行按 run 作者自己给的 blind / directed 标签归档，两者不相加。
