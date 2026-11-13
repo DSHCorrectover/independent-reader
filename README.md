@@ -80,4 +80,4 @@ See [LICENSE](LICENSE).
 
 ## Contact
 
-Guigui Wang · Correctover — AI Reliability
+Guigui Wang · Correctover
