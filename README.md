@@ -1,5 +1,7 @@
 # Second implementation of the verifiers for agent-evidence-vectors
 
+[**Commercial verification engagements — USD 8,000–15,000, court-ready dossier**](https://dshcorrectover.github.io/correctover-recovery-admission/services.html) · [**Independent audit & conformance**](https://dshcorrectover.github.io/correctover-recovery-admission/services.html)
+
 A **second implementation** of the verifiers for
 [`agent-evidence-vectors`](https://pypi.org/project/agent-evidence-vectors/).
 It shares **no code** with the reference reader: the reference source is read
